@@ -1,0 +1,110 @@
+@charset "UTF-8";
+html {
+  font-size: 80%;
+}
+
+@font-face {
+  font-family: "Nanum Barun Gothic";
+  src: url("../../public/font/NanumBarunGothic.woff") format("woff");
+}
+body {
+  font-family: "Nanum Barun Gothic";
+  background-color: #ffc9f3;
+  opacity: 1;
+  background-size: 17px 17px;
+  background-image: repeating-linear-gradient(45deg, #76bafd 0, #76bafd 1.7px, #ffc9f3 0, #ffc9f3 50%);
+}
+
+.container {
+  width: 760px;
+  display: flex;
+  margin: 0px auto;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+.subject {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem 1rem 2rem 1rem;
+  font-weight: 700;
+  color: #ffeeee;
+  background-color: #e58a8a;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 7px 8px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.main-image-container {
+  width: 88%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.question-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 7px 8px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.answers-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.answer:nth-child(1) {
+  margin-bottom: 1.2rem;
+}
+.answer:nth-child(2) {
+  margin-bottom: 1.2rem;
+}
+
+.next-btn-container {
+  width: 90%;
+  display: flex;
+}
+
+.next-btn {
+  margin-left: auto;
+  font-size: 1.3rem;
+  background-color: #4baeff;
+  color: #ffeeee;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 7px 8px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* PC (해상도 1024px)*/
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+@media all and (max-width: 480px) {
+  .container {
+    width: 350px;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
